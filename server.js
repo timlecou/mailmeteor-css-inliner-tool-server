@@ -8,7 +8,7 @@ app.use(cors())
 
 /**
  * resolve_links : Resolves the links and return an object with theyre content
- * @param {*} links : array of links
+ * @param {links} : array of links
  * @returns : object of the content of the links
  */
 async function resolve_links(links) {
@@ -36,3 +36,5 @@ app.post('/styles', async (req, res) => {
 app.listen(5000, () => {
     console.log('server is listening on port 5000')
 })
+
+module.exports = resolve_links;
