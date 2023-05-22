@@ -7,7 +7,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 /**
- * resolve_links : Resolves the links and return an object with theyre content
+ * resolve_links : Resolves the links and return an object with their content
  * @param {links} : array of links
  * @returns : object of the content of the links
  */
@@ -22,7 +22,7 @@ async function resolve_links(links) {
 }
 
 /**
- * POST /styles : Resolves CSS stylesheets and return theyre content
+ * POST /styles : Resolves CSS stylesheets and return their content
  */
 app.post('/styles', async (req, res) => {
     const style_links = req.body.links;
